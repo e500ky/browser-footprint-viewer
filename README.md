@@ -76,12 +76,6 @@ Tarayıcınızda `http://localhost:3000` adresini açarak uygulamayı görüntü
 
 Bu uygulama **hiçbir veriyi sunucuda saklamaz**. Tüm işlemler yalnızca kullanıcının tarayıcısında yerel olarak gerçekleşir. Toplanan bilgiler yalnızca kullanıcıya gösterilir ve üçüncü taraflarla paylaşılmaz. Bu araç yalnızca eğitim ve farkındalık amacıyla geliştirilmiştir.
 
-## 📷 Ekran Görüntüleri
-
-![Ana Sayfa](screenshots/home.png)
-![Sonuç Sayfası](screenshots/results.png)
-![Karşılaştırma Grafikleri](screenshots/comparison.png)
-
 ## 👥 Katkıda Bulunma
 
 Katkılarınızı bekliyoruz! Proje ile ilgili fikirleriniz, önerileriniz veya bulduğunuz hatalar için:
