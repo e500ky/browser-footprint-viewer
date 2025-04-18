@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Browser Footprint Viewer
 
-## Getting Started
+![Browser Footprint Viewer](https://img.shields.io/badge/Version-1.0.0-brightgreen) ![License MIT](https://img.shields.io/badge/License-MIT-blue)
 
-First, run the development server:
+Bu proje, tarayıcınızın sizin hakkınızda toplayabildiği bilgileri görselleştirerek çevrimiçi gizlilik hakkında farkındalık yaratmayı amaçlayan bir web uygulamasıdır.
+
+## 📑 İçerik
+
+- [Proje Hakkında](#proje-hakkında)
+- [Özellikler](#özellikler)
+- [Teknolojiler](#teknolojiler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Gizlilik](#gizlilik)
+- [Ekran Görüntüleri](#ekran-görüntüleri)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
+
+## 🔍 Proje Hakkında
+
+Browser Footprint Viewer, tarayıcınızın dijital parmak izinizi nasıl oluşturduğunu ve potansiyel olarak sizi nasıl tanımlayabileceğini göstermeyi amaçlar. Tarayıcı parmak izi (browser fingerprinting), tarayıcınızın ve cihazınızın özellikleri kombinasyonu kullanılarak sizi tanımlayan bir teknolojidir. Bu uygulama ile kendi parmak izinizi inceleyebilir ve çevrimiçi gizliliğinizi artırmak için ipuçları alabilirsiniz.
+
+## ✨ Özellikler
+
+- **Detaylı Tarayıcı Analizi**: UserAgent, işletim sistemi, ekran çözünürlüğü, dil, zaman dilimi ve daha fazla bilgiyi görüntüleme
+- **Gelişmiş Parmak İzi Tespiti**:
+  - Canvas Fingerprinting
+  - WebGL Bilgileri
+  - AudioContext Parmak İzi
+  - Font Tespiti
+  - Batarya Durumu
+  - AdBlock Kullanımı
+- **Anonimlik Skoru**: Tarayıcınızın ne kadar benzersiz olduğunu ölçen puan
+- **Veri Karşılaştırması**: Kendi verilerinizi ortalama kullanıcı verileriyle karşılaştırma
+- **Veri Dışa Aktarımı**: Tüm bilgilerinizi JSON formatında indirme imkanı
+- **Karanlık/Aydınlık Tema**: Kullanıcı tercihine göre tema değiştirme
+
+## 🛠️ Teknolojiler
+
+- Next.js (App Router)
+- React
+- TypeScript
+- SCSS & Tailwind CSS
+- Recharts (Grafik gösterimi için)
+- Next-themes (tema desteği için)
+
+## 📦 Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için:
 
 ```bash
+# Projeyi klonlayın
+git clone https://github.com/e500ky/browser-footprint-viewer.git
+
+# Proje dizinine geçin
+cd browser-footprint-viewer
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda `http://localhost:3000` adresini açarak uygulamayı görüntüleyebilirsiniz.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Kullanım
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Ana sayfada "Tarayıcını Test Et" butonuna tıklayın
+2. Tarayıcınızdan toplanan veriler analiz edilecek ve görselleştirilecektir
+3. Anonimlik skorunuzu görüntüleyin ve diğer tarayıcılarla karşılaştırın
+4. İsterseniz verilerinizi JSON formatında indirebilirsiniz
+5. Gizliliğinizi artırmak için önerilen ipuçlarını inceleyin
 
-## Learn More
+## 🔒 Gizlilik
 
-To learn more about Next.js, take a look at the following resources:
+Bu uygulama **hiçbir veriyi sunucuda saklamaz**. Tüm işlemler yalnızca kullanıcının tarayıcısında yerel olarak gerçekleşir. Toplanan bilgiler yalnızca kullanıcıya gösterilir ve üçüncü taraflarla paylaşılmaz. Bu araç yalnızca eğitim ve farkındalık amacıyla geliştirilmiştir.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📷 Ekran Görüntüleri
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Ana Sayfa](screenshots/home.png)
+![Sonuç Sayfası](screenshots/results.png)
+![Karşılaştırma Grafikleri](screenshots/comparison.png)
 
-## Deploy on Vercel
+## 👥 Katkıda Bulunma
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Katkılarınızı bekliyoruz! Proje ile ilgili fikirleriniz, önerileriniz veya bulduğunuz hatalar için:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Bu repo'yu fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
+4. Branch'inize push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
+
+---
+
+Hazırlayan: [e500ky](https://github.com/e500ky)
+
+© 2025 Browser Footprint Viewer. Tüm hakları saklıdır.
